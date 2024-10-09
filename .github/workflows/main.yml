@@ -1,0 +1,16 @@
+name: Jobs on selfhosted runner 
+on:
+  push:
+    branches:
+      - main 
+jobs:
+  reviewJob:
+   runs-on: self-hosted
+   steps:
+    - name: review the code 
+      run: echo "review the code"
+  buildJob:
+   runs-on: self-hosted
+   steps:
+    - name: build the code 
+      run: echo "Build the code"
